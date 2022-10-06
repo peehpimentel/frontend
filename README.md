@@ -59,8 +59,11 @@ Arquivo B | Versão 1 | Versão 2
  - DOD - Definition Of Done: critérios de aceite (quando os critérios estiverem dentro desse "DOD" ai sim poderemos enviar o projeto para a branch master)
  - versionamento 0.0.0 (primeiro zero é a versão que normalmente só é atualizado quando está na versão final, o segundo zero seria tipo alfa/beta e o terceiro zero seria tipo as builds, exemplo, versão 0.3.50 "versão 0, alfa/beta 3, build 50")
 
- ##### Para criar uma nova branch
- git checkout -p nome_branch
+ #### Comandos
+ - git checkout -b nome_branch (para fazer checkout a uma nova branch)
+ - git fetch --all (para verificar se não tem nenhuma alteração no repositório no GitHub)
+ - git merge nome_branch_mesclar (mesclar branchs)
+ - git checkout nome_branch (trocar de branchs)
 
 
  
