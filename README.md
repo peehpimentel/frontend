@@ -45,8 +45,8 @@ Arquivo B | Versão 1 | Versão 2
  
  OBS: Não é boa prática fazer commits pelo próprio site (como estou fazendo agora) e toda vez que eu fizer uma alteração no terminal, devo ir na aba "Source Control" e atualizar (colocar em "Staged Changes") as alterações por lá e depois utilizar o segundo e terceiro comando.
 
- ## GitFlow
- Fluxo do Git
+  ## GitFlow
+  Fluxo do Git
 
 
  ### Branchs
