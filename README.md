@@ -39,7 +39,8 @@ Arquivo B | Versão 1 | Versão 2
  - Após testado todo seu código
  - Primeiro utilizo git add *
  - Segundo git commit -m 'mensagem'
- - Terceiro git push para enviar alterações ao repositório
+ - Terceiro git push (para enviar alterações ao repositório, só consigo executar esse comando caso meu código esteja atualizado)
+ - Quarto git pull (para trazer alterações a sua máquina)
 
 ## GitFlow
 Fluxo do Git
