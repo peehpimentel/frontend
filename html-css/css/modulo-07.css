@@ -1,0 +1,115 @@
+@import url('tabelas.css');
+
+header p {
+	color: #fff;
+	font-size: 1.5rem;
+}
+
+header h2 {
+	font-weight: 100;
+}
+
+
+header > h2 {
+	font-weight: 600;
+}
+
+h2 + p {
+	background: #DCDCDC;
+	color: BLACK;
+}
+
+h2 ~ h5 {
+	font-size: 1.2rem;
+}
+
+div ~ p {
+	text-transform: uppercase;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+	font-size: 1.5rem;
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+a:visited {
+	color: rgb(167, 30, 30);
+}
+
+a:active {
+	color: #096;
+}
+
+a:hover {
+	color: rgb(6, 6, 82);
+	background: rgb(163, 162, 162);
+}
+
+header h1 {
+	background-color: rgb(220, 220, 220);
+	color: black;
+ }
+
+h1, h2, h3 {
+	font-weight: 400;
+	font-family: 'Limelight', cursive;
+	color: black;
+}
+
+p {
+	font-weight: normal;
+	font-size: 1.4rem;
+	color: rgb(218, 214, 214);
+}
+
+ul {
+	padding-left: .5rem;
+	margin-left: .5rem;	
+}
+
+li {
+	letter-spacing: 0.01rem;
+	font-family: sans-serif;
+	line-height: 1.5;
+}
+
+h3 {
+
+	font: italic bold 1.2rem/2 sans-serif;
+}
+
+section {
+	background: rgba(255, 255, 255, 0.95);
+}
+
+div p {
+	color: black;
+}
+
+header,
+footer {
+	background-color: rgb(220, 220, 220);
+}
+
+footer p {
+	color:black;
+}
+
+.navegacao {
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 0.5rem;
+}
+
+.navegacao li a {
+	color: white;
+	font-size: 1.4rem;
+}
+
+.navegacao li a:hover {
+	background-color: rgba(150, 150, 200, .5);
+	color: #333333;
+}

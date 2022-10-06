@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="../css/modulo-07.css">
+    <link rel="stylesheet" type="text/css" href="../css/elementos.css">
+    <title>EBAC - Web Layouts Part II</title>
+</head>
+    <body>
+        <header>
+            <h1>Exercício Módulo 9</h1>
+        </header>
+
+    <section>
+
+        <nav>
+            <h2>Aulas</h2><br>
+            <ul class="navegacao">
+                <li><a href="./00-htmlbasico.html">HTML Básico</a></li>
+                <li><a href="./01-introducao.html">Introdução</a></li>
+                <li><a href="./02-listalink.html">Lista Link</a></li>
+                <li><a href="./03-formatacaotexto.html">Fomatação Texto</a></li>
+                <li><a href="./04-tabelas.html">Tabelas</a></li>
+                <li><a href="./05-layout.html">Layout</a></li>
+                <li><a href="#">Formulario</a></li>
+                <li><a href="./07-modulo.html">Modulo 07</a></li>
+                <li><a href="./10-layouts-web.html">Layout Web</a></li>
+                <li><a href="./filtros-manipulacoes-02.html">Filtros e Manipulações</a></li>    
+                <li><a href="./layoutsfluidos.html">Layout Fluido</a></li>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="./05-layout.html">Sobre</a><li>
+				<li><a href="#contato">Contato</a><li>	
+            </ul>
+        </nav>
+			<article>
+				<h2>Contato</h2>
+				<p>Preencha os campos abaixo:</p>
+				<form method="post">
+					<div>
+						<p>					
+							<label for="nome">Nome</label><br>
+							<input type="text" name="nome" id="nome" placeholder="Digite o seu nome.">
+						</p>
+					</div>
+					<div>
+						<p>		
+							<label for="email">E-mail</label><br>
+							<input type="email" name="email" id="email" placeholder="Digite o seu e-mail.">
+						</p>
+					</div>
+					<div>
+						<p>	
+							<label for="date">Data de nascimento</label><br>
+							<input type="date" name="date" id="date">
+						</p>
+					</div>
+					<div>
+						<p>	
+							<label for="mensagem">Sugestões</label><br>
+							<textarea name=”mensagem” id=”mensagem” rows=”5” placeholder="Escreva sua sugestão em até 5 linhas."></textarea>
+						</p>
+					</div>
+					<div>
+						<p>
+							<label>Qual linguagem você prefere?</label>
+							<input type="radio" name="linguagens" value="javascript">Javascript
+							<input type="radio" name="linguagens" value="c++">C++
+							<input type="radio" name="linguagens" value="php">PHP
+						</p>
+					</div>
+					<div>
+						<p>
+							<label>Quais linguages você sabe?</label>
+							<input type="checkbox" name="linguagens" value="css">CSS
+							<input type="checkbox" name="linguagens" value="html">HTML
+							<input type="checkbox" name="linguagens" value="python">Python
+						</p>
+					</div>
+					<div>
+						<label>Qual a sua cor favorita?</label>
+						<select>
+							<option value="roxo">Roxo</option>
+							<option value="azul">Azul</option>
+							<option value="preto">Preto</option>
+							<option value="verde">Verde</option>
+							<option value="dourado" selected>Dourado</option>
+						</select>
+					</div>
+					<div>	
+						<input type="submit">
+					</div>
+				</form>
+			</article>
+		
+	</section>
+	<footer>
+		<p>Desenvolvido por Pedro Henrique Mello</p>
+	</footer>
+	</body>
+</html>
