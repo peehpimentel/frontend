@@ -34,6 +34,7 @@ Arquivo B | Versão 1 | Versão 2
  git config --global user.email "seu@email.com" - criar uma configuração global para alterar o email do usuário
  git config --get user.name - Mostrará o nome do usuário
  git config --get user.email - Mostrará o e-mail do usuário
+ 
  ## Commits
  Informação de alteração
  - Após testado todo seu código
@@ -41,6 +42,8 @@ Arquivo B | Versão 1 | Versão 2
  - Segundo git commit -m 'mensagem'
  - Terceiro git push (para enviar alterações ao repositório, só consigo executar esse comando caso meu código esteja atualizado)
  - Quarto git pull (para trazer alterações a sua máquina)
+ 
+ OBS: Não é boa prática fazer commits pelo próprio site (como estou fazendo agora) e toda vez que eu fizer uma alteração no terminal, devo ir na aba "Source Control" e atualizar (colocar em "Staged Changes") as alterações por lá e depois utilizar o segundo e terceiro comando.
 
 ## GitFlow
 Fluxo do Git
