@@ -64,6 +64,10 @@ Arquivo B | Versão 1 | Versão 2
  - git fetch --all (para verificar se não tem nenhuma alteração no repositório no GitHub)
  - git merge nome_branch_mesclar (mesclar branchs)
  - git checkout nome_branch (trocar de branchs)
+  
+  ### Configurar GitFlow
+ - git flow init (para iniciar o fluxo do git)
+ - git flow feature start nome_feature (inicia uma nova feature)
 
 
  
