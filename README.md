@@ -38,12 +38,32 @@ Arquivo B | Versão 1 | Versão 2
  ## Commits
  Informação de alteração
  - Após testado todo seu código
- - Primeiro utilizo git add *
+ - Primeiro utilizo git add * (para mover as alterações para "Staged Changes")
  - Segundo git commit -m 'mensagem'
  - Terceiro git push (para enviar alterações ao repositório, só consigo executar esse comando caso meu código esteja atualizado)
  - Quarto git pull (para trazer alterações a sua máquina)
  
  OBS: Não é boa prática fazer commits pelo próprio site (como estou fazendo agora) e toda vez que eu fizer uma alteração no terminal, devo ir na aba "Source Control" e atualizar (colocar em "Staged Changes") as alterações por lá e depois utilizar o segundo e terceiro comando.
 
-## GitFlow
-Fluxo do Git
+ ## GitFlow
+ Fluxo do Git
+
+
+ ### Branchs
+ São ramificações do código. Quando estou trabalhando sozinho é melhor que tenha apenas uma branch, uma vez que fica mais fácil de atualizar o código. E quando estiver trabalhando com outras pessoas, é melhor ter mais de uma branch que ai teremos versões diferentes do código.
+
+ Tipos de branchs:
+
+ - main / master (mais comum, quando o projeto é publicado)
+ - develop (onde será feita as alterações de um servidor de teste, sem afetar o projeto principal)
+ - DOD - Definition Of Done: critérios de aceite (quando os critérios estiverem dentro desse "DOD" ai sim poderemos enviar o projeto para a branch master)
+ - versionamento 0.0.0 (primeiro zero é a versão que normalmente só é atualizado quando está na versão final, o segundo zero seria tipo alfa/beta e o terceiro zero seria tipo as builds, exemplo, versão 0.3.50 "versão 0, alfa/beta 3, build 50")
+
+ ##### Comandos
+ git checkout -p nome_branch (para criar uma branch)
+ git fetch --all (para verificar se não tem nenhuma alteração no repositório no GitHub)
+ git merge nome_branch_mesclar (mesclar branchs)
+ git checkout nome_branch (trocar de branchs)
+
+
+ 
