@@ -45,8 +45,8 @@ Arquivo B | Versão 1 | Versão 2
  
  OBS: Não é boa prática fazer commits pelo próprio site (como estou fazendo agora) e toda vez que eu fizer uma alteração no terminal, devo ir na aba "Source Control" e atualizar (colocar em "Staged Changes") as alterações por lá e depois utilizar o segundo e terceiro comando.
 
- ## GitFlow
- Fluxo do Git
+  ## GitFlow
+  Fluxo do Git
 
 
  ### Branchs
@@ -59,11 +59,11 @@ Arquivo B | Versão 1 | Versão 2
  - DOD - Definition Of Done: critérios de aceite (quando os critérios estiverem dentro desse "DOD" ai sim poderemos enviar o projeto para a branch master)
  - versionamento 0.0.0 (primeiro zero é a versão que normalmente só é atualizado quando está na versão final, o segundo zero seria tipo alfa/beta e o terceiro zero seria tipo as builds, exemplo, versão 0.3.50 "versão 0, alfa/beta 3, build 50")
 
- ##### Comandos
- git checkout -p nome_branch (para criar uma branch)
- git fetch --all (para verificar se não tem nenhuma alteração no repositório no GitHub)
- git merge nome_branch_mesclar (mesclar branchs)
- git checkout nome_branch (trocar de branchs)
+ #### Comandos
+ - git checkout -b nome_branch (para fazer checkout a uma nova branch)
+ - git fetch --all (para verificar se não tem nenhuma alteração no repositório no GitHub)
+ - git merge nome_branch_mesclar (mesclar branchs)
+ - git checkout nome_branch (trocar de branchs)
 
 
  
