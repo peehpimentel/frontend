@@ -68,6 +68,7 @@ Arquivo B | Versão 1 | Versão 2
   ### Configurar GitFlow
  - git flow init (para iniciar o fluxo do git)
  - git flow feature start nome_feature (inicia uma nova feature)
+ - git flow feature finish nome_feature (termina de utilizar a feature em questão)
 
 
  
