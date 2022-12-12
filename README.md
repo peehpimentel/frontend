@@ -71,4 +71,12 @@ Arquivo B | Versão 1 | Versão 2
  - git flow feature finish nome_feature (termina de utilizar a feature em questão)
 
 
+  #### Variáveis em JS
+  - var é uma variável de escopo global e local
+  - let é uma variável de escopo local
+  - const é uma variável imutável
+  - string é uma variável que lê caractéres (para declarar um caracter, precisamos colocar o texto entre '' ou "")
+  - array é uma sequencia de valores dentro de uma variável (separados por vírgula)
+
+
  
