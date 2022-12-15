@@ -113,12 +113,29 @@ Arquivo B | Versão 1 | Versão 2
   - = significa "recebe o valor"
   - == significa "é igual à" (valor)
   - === significa "é inteiramente igual" (valor e variável)
-  - != significa "diferente de"
+  - != significa "diferente de" (valor)
+  - !== signifaca "é inteiramente diferente" (valor e variável)
   - variável++ significa "incrementa 1 valor"
   - variável-- significa "subtrai 1 valor"
   - variável 1 > variável 2/condição significa "variável 1 maior que variável 2/condição"
   - variável 1 < variável 2/condição significa "variável 1 menor que variável 2/condição"
   - variável 1 >= variável 2/condição significa "variável 1 maior ou igual à variável 2/condição"
   - variável 1 <= variável 2/condição significa "variável 1 menor ou igual à variável 2/condição"
+  - ! significa "NÃO" (utilizado para negar a sentença que vem na sequência)
+  - && significa "E" (as duas condições precisam ser verdadeiras)
+  - || significa "OU" (apenas uma condição precisa ser verdadeira)
+  - typeof serve para verificar o tipo da variável
 
+  * Exemplo de !
+  - a = 1, b = 1 {
+  - !a == b
+  - output será false
+  - }
+  - O código acima está perguntado se o valor não existende de a é igual a b? O resultado é false, porque o "valor não existente de a" é igual a 0 e o valor de b é igual a 1
+  - Atribuir valor a uma variável, a partir de uma condição lógica (sem usar if/else) {
+  - var cor = 'Dourado'
+  - var meuCarro = cor == 'Preto' ? 'Preto' : 'Branco'
+  - output será Branco
+  - }
+  - Ou seja, o código acima está definindo a cor como Dourado, depois a variável meuCarro recebe a variável cor e caso a cor for Preta, o resultado deverá sair como Preto, se não sairá como Branco
  
