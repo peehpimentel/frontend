@@ -132,10 +132,101 @@ Arquivo B | Versão 1 | Versão 2
   - output será false
   - }
   - O código acima está perguntado se o valor não existende de a é igual a b? O resultado é false, porque o "valor não existente de a" é igual a 0 e o valor de b é igual a 1
-  - Atribuir valor a uma variável, a partir de uma condição lógica (sem usar if/else) {
+  
+  * Atribuir valor a uma variável, a partir de uma condição lógica (sem usar if/else) {
   - var cor = 'Dourado'
   - var meuCarro = cor == 'Preto' ? 'Preto' : 'Branco'
   - output será Branco
   - }
   - Ou seja, o código acima está definindo a cor como Dourado, depois a variável meuCarro recebe a variável cor e caso a cor for Preta, o resultado deverá sair como Preto, se não sairá como Branco
- 
+  
+  ### Laços de Repetição
+
+  - Sempre precisar ter uma condição de entrada e uma de saída, caso não tenha esses dois fatores, criará um loop infinito.
+  - Sintaxe "FOR" -> for(expressãoInicial; condição; incremento){ códigos }
+  - Exemplo 1: Revisão de carro
+  - 
+  - var kmAtual
+  - var revisao = 10000
+  - for(kmAtual = 0; kmAtual < revisao; kmAtual++){
+  - console.log(`Seu carro tem apenas ${kmAtual}. Ainda não precisa de revisão.`);
+  - }
+  - 
+  - Exemplo 2: Média de alunos com 4 notas
+  - 
+  - var alunos = [ "Pedro", "Dayane", "Rose"]
+  - var notasAlunos = [
+  - [8, 5, 6, 10],
+  - [7, 8, 4, 9],
+  - [6, 3, 2, 10]
+  - ]
+  - var nota = 0
+  - for (var i = 0; i < alunos.length; i++){
+  - notasFinais = 0
+  - aluno = alunos[i]
+  - valores = notasAlunos[i]
+  - console.log(`Estudante: ${aluno}`);
+  - console.log(`Notas: ${valores}`);
+  - for (var c = 0; c < valores.length; c++ ){
+  - notasFinais +=  valores[c]
+  - }
+  - media = notasFinais / 4
+  - if (media >= 7){
+  - console.log(`Sua média foi ${media}. Parabéns ${aluno}, você passou de ano!`)
+  - }
+  - else{
+  - console.log(`Sua média foi ${media}. Infelizmente ${aluno}, você não passou de ano!`)
+  - }
+  - }
+  - 
+  - Outra maneira de fazer esse exemplo 2, é criando objetos
+  - 
+  - var alunos = [
+  - {
+  - nome: "Pedro",
+  - notas: [8, 5, 6, 10]
+  - },
+  - {
+  - nome: "Dayane",
+  - notas: [7, 8, 4, 9]
+  - },
+  - {
+  - nome: "Rose",
+  - notas: [6, 3, 2, 10]
+  - }
+  - ]
+  - function calcularMedia(aluno) {
+  - var soma = 0;
+  - for (var c = 0; c < aluno.notas.length; c++) {
+  - soma += aluno.notas[c];
+  - }
+  - return soma / aluno.notas.length;
+  - }
+  - for (i = 0; i < alunos.length; i++){
+  - console.log(`Estudante: ${alunos[i].nome}`)
+  - for (j = 0; j < alunos[i].notas.length; j++){
+  - console.log(`Notas: ${alunos[i].notas[j]}`)
+  - }
+  - var media = calcularMedia(alunos[i]);
+  - console.log(`A média de ${alunos[i].nome} é ${media}`)
+  - if (media >= 7){
+  - console.log(`Sua média foi ${media}. Parabéns estudante ${alunos[i].nome}, você passou de ano!`)
+  - }
+  - else {
+  - console.log(`Sua média foi ${media}. Infelizmente estudante ${alunos[i].nome}, você não passou de ano!`)
+  - }
+  - }
+  - 
+  - No laço WHILE  nós precisamos declarar a variável antes de começar o laço, já no laço FOR, podemos declarar a variável dentro do laço
+  - Sintaxe "WHILE" -> while (variável e condição) { códigos }
+  - Exemplo 1: Mostras as horas
+  - 
+  - var horas = 24 
+  - while (horas > 1){
+  - console.log(horas)
+  - horas--
+  - console.log(horas)
+  - }
+  - 
+  - Além do WHILE, nós também temos o DO-WHILE, a diferença entre os dois é que o DO-WHILE ele fará a execução antes da condição
+  - Sintaxe do DO-WHILE -> do { códigos } while (condição)
