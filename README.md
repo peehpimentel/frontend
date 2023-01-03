@@ -230,3 +230,18 @@ Arquivo B | Versão 1 | Versão 2
   - 
   - Além do WHILE, nós também temos o DO-WHILE, a diferença entre os dois é que o DO-WHILE ele fará a execução antes da condição
   - Sintaxe do DO-WHILE -> do { códigos } while (condição)
+
+  ## Funções
+
+  - Evitar a repetição de códigos
+  - Realizar chamadas dinâmicas de algoritmos
+  - Sintaxe -> function nomeFunção(parâmetros/podem ser vazios){ códigos }
+  - Exemplo:
+  - 
+  - function calcularMedia(aluno) {
+  - var soma = 0;
+  - for (var c = 0; c < aluno.notas.length; c++) {
+  - soma += aluno.notas[c];
+  - }
+  - return soma / aluno.notas.length;
+  - }
